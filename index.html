@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardy School - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white !important;
+        }
+        
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: white !important;
+            transform: translateY(-2px);
+        }
+        
+        .dropdown-menu {
+            background-color: var(--primary-color);
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .dropdown-item {
+            color: rgba(255,255,255,0.9);
+            transition: all 0.3s;
+        }
+        
+        .dropdown-item:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .dropdown-item i {
+            margin-right: 8px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .quick-links {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-graduation-cap"></i> Hardy School
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vacancies"><i class="fas fa-briefcase"></i> Vacancies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i> More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#report"><i class="fas fa-file-alt"></i> Report</a></li>
+                            <li><a class="dropdown-item" href="#pass-pepper"><i class="fas fa-medal"></i> Pass Pepper</a></li>
+                            <li><a class="dropdown-item" href="#results"><i class="fas fa-chart-line"></i> Result Sheet</a></li>
+                            <li><a class="dropdown-item" href="#life"><i class="fas fa-heart"></i> Life @ Hardy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Welcome to Hardy School</h1>
+            <p>Excellence in Education Since 2020</p>
+            <button class="btn btn-light btn-lg">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feature-box">
+                    <div class="card-icon"><i class="fas fa-book-reader"></i></div>
+                    <h4>Quality Education</h4>
+                    <p>Providing world-class education with experienced teachers</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h4>Student Life</h4>
+                    <p>Vibrant campus life with sports, arts, and activities</p>
+                </div>
+                <div class="col-md-4 feature-box">
+                    <div class="card-icon"><i class="fas fa-trophy"></i></div>
+                    <h4>Achievements</h4>
+                    <p>Outstanding academic and sports achievements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Our History</h3>
+                <p>Hardy School has been a pillar of education for over a century. Founded in 1900, we have consistently maintained our commitment to academic excellence and character development.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Our Mission</h3>
+                <p>To provide quality education that empowers students to become responsible global citizens and lifelong learners, equipped with skills for the 21st century.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="container">
+        <h2 class="section-title">Latest News</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-newspaper"></i> Annual Sports Day</h5>
+                        <p class="text-muted">September 20, 2025</p>
+                        <p class="card-text">Annual sports day will be held on October 15th. All students are encouraged to participate.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-award"></i> Academic Excellence</h5>
+                        <p class="text-muted">September 18, 2025</p>
+                        <p class="card-text">Hardy School achieves 100% pass rate in O/L examinations for the 5th consecutive year.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-calendar"></i> Parent Meeting</h5>
+                        <p class="text-muted">September 15, 2025</p>
+                        <p class="card-text">Parent-teacher meeting scheduled for October 1st. Please mark your calendars.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Section -->
+    <section id="report" class="container">
+        <h2 class="section-title">Reports</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5><i class="fas fa-file-pdf"></i> Annual Report 2024</h5>
+                        <p>Download our comprehensive annual report</p>
+                        <button class="btn btn-primary">Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pass Pepper Section -->
+    <section id="pass-pepper" class="container">
+        <h2 class="section-title">Pass Pepper - Outstanding Achievers</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-user-graduate card-icon"></i>
+                        <h5>A/L 2024</h5>
+                        <p>95% Pass Rate<br>50 District Ranks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-medal card-icon"></i>
+                        <h5>O/L 2024</h5>
+                        <p>100% Pass Rate<br>75 Island Ranks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-trophy card-icon"></i>
+                        <h5>Grade 5</h5>
+                        <p>98% Pass Rate<br>30 Island Ranks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="container">
+        <h2 class="section-title">Result Sheet</h2>
+        <div class="card">
+            <div class="card-body">
+                <p class="text-center">Check your examination results online</p>
+                <div class="text-center">
+                    <button class="btn btn-primary me-2">A/L Results</button>
+                    <button class="btn btn-primary me-2">O/L Results</button>
+                    <button class="btn btn-primary">Grade 5 Results</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life at Hardy Section -->
+    <section id="life" class="container">
+        <h2 class="section-title">Life @ Hardy</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-futbol card-icon"></i>
+                        <h5>Sports</h5>
+                        <p>Cricket, Football, Athletics & more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-music card-icon"></i>
+                        <h5>Arts</h5>
+                        <p>Music, Drama, Dancing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-flask card-icon"></i>
+                        <h5>Science</h5>
+                        <p>Laboratories & Innovation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-hands-helping card-icon"></i>
+                        <h5>Community</h5>
+                        <p>Social Service Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vacancies Section -->
+    <section id="vacancies" class="container">
+        <h2 class="section-title">Vacancies</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5><i class="fas fa-chalkboard-teacher"></i> Mathematics Teacher</h5>
+                <p>Full-time position for experienced mathematics teacher</p>
+                <button class="btn btn-primary">Apply Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5><i class="fas fa-laptop-code"></i> IT Instructor</h5>
+                <p>Part-time position for IT and computer science instructor</p>
+                <button class="btn btn-primary">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mb-5">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
+                        <p>123 School Road<br>Colombo 07<br>Sri Lanka</p>
+                        
+                        <h5><i class="fas fa-phone"></i> Phone</h5>
+                        <p>+94 11 234 5678</p>
+                        
+                        <h5><i class="fas fa-envelope"></i> Email</h5>
+                        <p>info@hardyschool.lk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Send us a message</h5>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Hardy School. All Rights Reserved.</p>
+            <div class="mt-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
